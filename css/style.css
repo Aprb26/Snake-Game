@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../simg2.jpg"); 
+    min-height: 100vh;
+    background-size: 175vw 140vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(42, 164, 8);
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(42, 164, 8);
+}
+
+#board{
+    background: linear-gradient(rgba(72, 142, 147, 0.874), rgba(41, 112, 19, 0.737));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    /* position: fixed; */
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#aud{
+    height: 65px;
+    width: 65px;
+    border-radius: 15px;
+    margin-right: 5cm;
+    margin-bottom: 12cm;
+    background: url("../moff.png");
+    background-size: cover;
+    background-color: rgb(27, 176, 27);
+}
+
+.s{
+    background-color: rgba(240, 248, 255, 0);
+    border-color: rgba(240, 248, 255, 0);
+    height: 80px;
+    width: 80px;
+}
+
+#s3, #s6{
+    height: 0px;
+    width: 0px;
+    display: flex;
+}
+
+#ukey{
+    background: url("../up.png");
+    background-color: rgb(8, 152, 78);
+    background-size: cover;
+    border-radius: 25px;
+    height: 80px;
+    width: 80px;
+}
+#lkey{
+    background: url("../left.png");
+    background-color: rgb(8, 152, 78);
+    background-size: cover;
+    border-radius: 25px;
+    height: 80px;
+    width: 80px;
+}
+#rkey{
+    background: url("../right.png");
+    background-color: rgb(8, 152, 78);
+    background-size: cover;
+    border-radius: 25px;
+    height: 80px;
+    width: 80px;
+}
+#dkey{
+    background: url("../down.png");
+    background-color: rgb(8, 152, 78);
+    background-size: cover;
+    border-radius: 25px;
+    height: 80px;
+    width: 80px;
+}
+
+.head{
+    background: linear-gradient(rgb(4, 28, 2), rgb(69, 143, 8));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background: linear-gradient(rgb(12, 80, 6), rgb(19, 141, 46));
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
